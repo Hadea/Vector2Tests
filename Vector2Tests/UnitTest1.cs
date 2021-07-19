@@ -37,7 +37,6 @@ namespace Vector2Tests
         {
             Vector2 vA = new(3f, 4f);
             Assert.AreEqual(5f, vA.Length);
-            Assert.AreEqual(2f, vA.Y);
         }
 
         [TestMethod]
@@ -54,7 +53,6 @@ namespace Vector2Tests
         {
             Vector2 vA = new(3f, 4f);
             Assert.AreEqual(25f, vA.LengthSquared);
-            Assert.AreEqual(2f, vA.Y);
         }
 
         [TestMethod]
@@ -104,5 +102,8 @@ namespace Vector2Tests
             Assert.AreEqual(-1f, vA.X);
             Assert.AreEqual(-1f, vA.Y);
         }
+
+
+        //todo: normalize
     }
 }
